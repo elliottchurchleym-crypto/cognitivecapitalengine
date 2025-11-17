@@ -1,0 +1,80 @@
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cognitive Capital Engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #050915;
+      color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .wrapper {
+      max-width: 720px;
+      padding: 32px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      background: radial-gradient(circle at top left, rgba(153,179,212,0.18), transparent 55%);
+      box-shadow: 0 22px 60px rgba(0,0,0,0.55);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.9;
+    }
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #3cffc4;
+      box-shadow: 0 0 8px rgba(60,255,196,0.8);
+    }
+    h1 {
+      margin: 18px 0 10px;
+      font-size: 32px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 6px 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(245,245,245,0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="pill">
+      <span class="dot"></span>
+      <span>Cognitive Capital Engine · Main</span>
+    </div>
+    <h1>Cognitive Capital Engine</h1>
+    <p>
+      This is the main production environment for the Cognitive Capital Engine:
+      the core framework for codifying, valuing, and reporting cognitive capital
+      within the Elliott Churchley Media ecosystem.
+    </p>
+    <p>
+      Public visitors should see this environment only after features have been
+      validated in CCE / Dev.
+    </p>
+  </div>
+</body>
+</html>
+EOF
